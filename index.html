@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =====================================================================
+       SEO Y VISTA PREVIA AL COMPARTIR (WhatsApp y Facebook)
+       Qué puedes modificar: el texto de title, description y og:*.
+       Nota: estas etiquetas no se leen desde CONFIG, porque WhatsApp y
+       Facebook no ejecutan JavaScript. Si cambias el nombre del estudio,
+       cámbialo también aquí.
+       ===================================================================== -->
+  <title>Eleva Dev | Dashboards de ventas para negocios en Coatzacoalcos</title>
+  <meta name="description" content="Convierto tu Excel en un tablero visual para que veas tus ventas en segundos. Dashboards para restaurantes, tiendas y farmacias en Coatzacoalcos, Veracruz.">
+  <meta name="author" content="Eric Jesús Leyva López">
+  <meta name="theme-color" content="#0B1628">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Eleva Dev">
+  <!-- og:url y og:image deben ser direcciones completas. Si tu usuario de GitHub
+       no es ericl09, cambia ericl09.github.io en las dos líneas. -->
+  <meta property="og:url" content="https://ericl09.github.io/">
+  <meta property="og:title" content="Eleva Dev | Dashboards de ventas para negocios en Coatzacoalcos">
+  <meta property="og:description" content="Convierto tu Excel en un tablero visual. Dashboards para restaurantes, tiendas y farmacias en Coatzacoalcos, con precios claros desde el inicio.">
+
+  <meta property="og:image" content="https://ericl09.github.io/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Eleva Dev: dashboards de ventas para negocios en Coatzacoalcos">
+
+  <!-- Ícono de la pestaña, dibujado aquí mismo para no depender de otro archivo -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1628'/%3E%3Cpath d='M8 23V16M16 23V11M24 23V7' stroke='%232DE2C5' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Tipografías: Space Grotesk para títulos e Inter para el texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Avisa al CSS que hay JavaScript. Sin él, todo se muestra sin animación. -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Estilos: colores, tipografía y diseño de toda la página -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =====================================================================
+       1. MENÚ SUPERIOR
+       Qué puedes modificar: el texto de los enlaces. Cada href debe coincidir
+       con el id de la sección a la que lleva.
+       ===================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 20v-6M12 20V10M19 20V4"/></svg>
+        <span data-config="estudio">Eleva Dev</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#ejemplos">Ejemplos</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================================================================
+         2. HERO (primera pantalla)
+         Qué puedes modificar: la frase, el subtítulo y los datos de la
+         maqueta. Para cambiar una barra, edita --h (su altura en %).
+         =================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <h1>Convierto tu Excel en un tablero visual para que veas tus ventas en segundos</h1>
+          <p class="hero-lead">Para restaurantes, tiendas y farmacias: qué se vende, cuánto entra y cuánto te queda, en una sola pantalla.</p>
+          <div class="hero-actions">
+            <a class="btn btn--ghost" href="#ejemplos">Ver ejemplos</a>
+            <a class="btn btn--whatsapp" href="#contacto" data-whatsapp>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+              Escríbeme por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="mock reveal" role="img" aria-label="Ejemplo de tablero de ventas de un restaurante con datos ficticios: ventas del mes de 84,320 pesos, ganancia de 21,080 pesos y ticket promedio de 68 pesos. El sábado es el día con más ventas y los tacos al pastor son el producto más vendido.">
+          <div class="mock-top">
+            <span class="mock-title">Ventas del mes</span>
+            <span class="mock-tag">Datos de ejemplo</span>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi"><div class="kpi-label">Ventas</div><div class="kpi-value">$84,320</div></div>
+            <div class="kpi"><div class="kpi-label">Ganancia</div><div class="kpi-value">$21,080</div></div>
+            <div class="kpi"><div class="kpi-label">Ticket prom.</div><div class="kpi-value">$68</div></div>
+          </div>
+
+          <div class="panels">
+            <div class="panel panel--bars">
+              <div class="panel-title">Ventas por día</div>
+              <div class="bars">
+                <div class="bar-col"><div class="bar" style="--h:42%"></div><span>L</span></div>
+                <div class="bar-col"><div class="bar" style="--h:50%"></div><span>M</span></div>
+                <div class="bar-col"><div class="bar" style="--h:46%"></div><span>M</span></div>
+                <div class="bar-col"><div class="bar" style="--h:58%"></div><span>J</span></div>
+                <div class="bar-col"><div class="bar" style="--h:72%"></div><span>V</span></div>
+                <div class="bar-col"><div class="bar bar--top" style="--h:86%"></div><span>S</span></div>
+                <div class="bar-col"><div class="bar" style="--h:64%"></div><span>D</span></div>
+              </div>
+            </div>
+
+            <div class="panel panel--donut">
+              <div class="panel-title">Por categoría</div>
+              <div class="donut-wrap">
+                <div class="donut"></div>
+                <ul class="legend">
+                  <li><i class="dot dot--1"></i>Comida<b>52%</b></li>
+                  <li><i class="dot dot--2"></i>Bebidas<b>28%</b></li>
+                  <li><i class="dot dot--3"></i>Postres<b>20%</b></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel panel--list">
+              <div class="panel-title">Más vendidos</div>
+              <ol class="top-list">
+                <li><span>1. Tacos al pastor</span><span>412 pzas</span></li>
+                <li><span>2. Agua de horchata</span><span>268 pzas</span></li>
+                <li><span>3. Quesadilla de queso</span><span>195 pzas</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. EL PROBLEMA
+         Qué puedes modificar: el título y el texto de cada tarjeta.
+         =================================================================== -->
+    <section class="section section--alt" aria-labelledby="titulo-problema">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-problema">¿Te suena familiar?</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+            <h3>“No sé qué producto se vende más”</h3>
+            <p>Compras y surtes por costumbre, sin saber qué te deja dinero y qué se queda parado.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+            <h3>“Reviso el Excel y no entiendo nada”</h3>
+            <p>Tienes filas y filas de datos, pero no el tiempo para sacarles una respuesta clara.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg>
+            <h3>“No sé si este mes gané o perdí”</h3>
+            <p>Entra dinero y sale dinero, y a fin de mes sigues sin saber cómo te fue en realidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. EJEMPLOS (portafolio)
+         Qué puedes modificar: el texto y el link de cada demo.
+         En cada botón "Ver demo" cambia href="#" por el link de Streamlit.
+         =================================================================== -->
+    <section class="section" id="ejemplos" aria-labelledby="titulo-ejemplos">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-ejemplos">Ejemplos para tu tipo de negocio</h2>
+          <p>Cada tablero se arma con los datos y las preguntas de tu negocio.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card demo-card reveal">
+            <div class="demo-chart">
+              <svg viewBox="0 0 240 120" role="img" aria-labelledby="demo-r">
+                <title id="demo-r">Gráfica ilustrativa de barras: ventas por horario, con la cena como el horario más fuerte.</title>
+                <rect class="v-bar fill-muted" x="14" y="62" width="44" height="36" rx="4"/>
+                <rect class="v-bar fill-muted" x="70" y="38" width="44" height="60" rx="4"/>
+                <rect class="v-bar fill-muted" x="126" y="52" width="44" height="46" rx="4"/>
+                <rect class="v-bar fill-accent" x="182" y="16" width="44" height="82" rx="4"/>
+                <line class="baseline" x1="6" y1="98" x2="234" y2="98"/>
+                <text x="36" y="114" text-anchor="middle">Mañana</text>
+                <text x="92" y="114" text-anchor="middle">Comida</text>
+                <text x="148" y="114" text-anchor="middle">Tarde</text>
+                <text class="label-strong" x="204" y="114" text-anchor="middle">Cena</text>
+              </svg>
+            </div>
+            <h3>Restaurante</h3>
+            <p>Platillos más pedidos, horarios fuertes y ticket promedio.</p>
+            <!-- PON AQUÍ EL LINK DE STREAMLIT DEL RESTAURANTE: cambia href="#" por tu URL -->
+            <a class="btn btn--primary" href="#" aria-label="Ver demo del tablero para restaurante">Ver demo</a>
+          </article>
+
+          <article class="card demo-card reveal">
+            <div class="demo-chart">
+              <svg viewBox="0 0 240 120" role="img" aria-labelledby="demo-t">
+                <title id="demo-t">Gráfica ilustrativa de línea: ventas de la tienda subiendo a lo largo de seis meses.</title>
+                <line class="baseline" x1="6" y1="98" x2="234" y2="98"/>
+                <path class="line" pathLength="1" d="M14 80 L56 70 L98 74 L140 50 L182 42 L222 20"/>
+                <circle class="point" cx="222" cy="20" r="5"/>
+                <text x="14" y="114">Ene</text>
+                <text x="226" y="114" text-anchor="end">Jun</text>
+              </svg>
+            </div>
+            <h3>Tienda</h3>
+            <p>Ventas por mes, productos estrella y lo que conviene resurtir.</p>
+            <!-- PON AQUÍ EL LINK DE STREAMLIT DE LA TIENDA: cambia href="#" por tu URL -->
+            <a class="btn btn--primary" href="#" aria-label="Ver demo del tablero para tienda">Ver demo</a>
+          </article>
+
+          <article class="card demo-card reveal">
+            <div class="demo-chart">
+              <svg viewBox="0 0 240 120" role="img" aria-labelledby="demo-f">
+                <title id="demo-f">Gráfica ilustrativa de barras horizontales: ventas por categoría de farmacia, encabezadas por medicamentos.</title>
+                <text x="6" y="24">Medicinas</text>
+                <rect class="h-bar fill-accent" x="82" y="13" width="150" height="16" rx="4"/>
+                <text x="6" y="56">Higiene</text>
+                <rect class="h-bar fill-muted" x="82" y="45" width="96" height="16" rx="4"/>
+                <text x="6" y="88">Bebé</text>
+                <rect class="h-bar fill-muted" x="82" y="77" width="62" height="16" rx="4"/>
+              </svg>
+            </div>
+            <h3>Farmacia</h3>
+            <p>Ventas por categoría, productos con más salida y existencias.</p>
+            <!-- PON AQUÍ EL LINK DE STREAMLIT DE LA FARMACIA: cambia href="#" por tu URL -->
+            <a class="btn btn--primary" href="#" aria-label="Ver demo del tablero para farmacia">Ver demo</a>
+          </article>
+        </div>
+        <p class="note reveal">Las gráficas y los demos usan datos ficticios.</p>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. PRECIOS DEL SERVICIO ESTRELLA
+         Qué puedes modificar: precios y listas de lo que incluye cada plan.
+         data-mensaje es el texto que llega prellenado a tu WhatsApp.
+         =================================================================== -->
+    <section class="section section--alt" id="precios" aria-labelledby="titulo-precios">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-precios">Precios claros desde el inicio</h2>
+          <p>Elige tu plan y escríbeme: tu mensaje ya llega con el plan que te interesa.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="card plan reveal">
+            <h3>Básico</h3>
+            <div class="plan-price">$2,500 <small>MXN</small></div>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Tablero con hasta 5 gráficas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Hecho a partir de tu Excel</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Revisión juntos antes de entregar</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contacto" data-whatsapp data-mensaje="Hola, me interesa el plan Básico de $2,500 MXN para un tablero con mi Excel.">Quiero el Básico</a>
+          </article>
+
+          <article class="card plan plan--featured reveal">
+            <span class="plan-badge">Más elegido</span>
+            <h3>Pro</h3>
+            <div class="plan-price">$4,500 <small>MXN</small></div>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Tablero conectado a tus datos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Se actualiza automáticamente</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Revisión juntos antes de entregar</li>
+            </ul>
+            <a class="btn btn--whatsapp" href="#contacto" data-whatsapp data-mensaje="Hola, me interesa el plan Pro de $4,500 MXN para un tablero que se actualice automáticamente.">Quiero el Pro</a>
+          </article>
+
+          <article class="card plan reveal">
+            <h3>Mantenimiento</h3>
+            <div class="plan-price">$600 <small>MXN/mes</small></div>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Ajustes a tu tablero</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Soporte cuando lo necesites</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Nuevas gráficas</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contacto" data-whatsapp data-mensaje="Hola, me interesa el plan de Mantenimiento de $600 MXN al mes para mi tablero.">Quiero Mantenimiento</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. OTROS SERVICIOS ("También hago")
+         Qué puedes modificar: nombre, descripción y precio de cada servicio.
+         =================================================================== -->
+    <section class="section" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-servicios">También hago</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card service reveal">
+            <h3>Páginas web y catálogos digitales</h3>
+            <p>Para que tus clientes te encuentren y vean lo que vendes.</p>
+            <p class="service-price">Desde $2,000 MXN</p>
+            <a class="text-link" href="#contacto" data-whatsapp data-mensaje="Hola, me interesa una página web o catálogo digital para mi negocio.">Preguntar por WhatsApp</a>
+          </article>
+          <article class="card service reveal">
+            <h3>Automatizaciones con Python</h3>
+            <p>Para dejar de repetir a mano las tareas de todos los días.</p>
+            <p class="service-price">Desde $1,000 MXN</p>
+            <a class="text-link" href="#contacto" data-whatsapp data-mensaje="Hola, me interesa automatizar una tarea de mi negocio con Python.">Preguntar por WhatsApp</a>
+          </article>
+          <article class="card service reveal">
+            <h3>Sistemas web a la medida</h3>
+            <p>Para cuando tu negocio necesita algo que no venden hecho.</p>
+            <p class="service-price">Por cotización</p>
+            <a class="text-link" href="#contacto" data-whatsapp data-mensaje="Hola, quiero cotizar un sistema web a la medida para mi negocio.">Preguntar por WhatsApp</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. CÓMO TRABAJO
+         Qué puedes modificar: el texto de los pasos y la forma de pago.
+         Los números se generan solos con CSS.
+         =================================================================== -->
+    <section class="section section--alt" id="proceso" aria-labelledby="titulo-proceso">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-proceso">Cómo trabajo</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <h3>Me mandas tu Excel o reporte</h3>
+            <p>Por WhatsApp o correo, tal como lo tengas.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Diseño tu tablero</h3>
+            <p>Ordeno tus datos y armo las gráficas que necesitas.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Lo revisamos juntos</h3>
+            <p>Me dices qué cambiar y lo dejamos a tu gusto.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Te lo entrego listo</h3>
+            <p>Listo para usarlo en tu negocio.</p>
+          </li>
+        </ol>
+        <p class="payment reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          <span><strong>Forma de pago:</strong> 50% al iniciar y 50% al entregar.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. QUIÉN ESTÁ DETRÁS
+         Para cambiar tu foto: reemplaza assets/foto.jpg por otra imagen
+         cuadrada con el mismo nombre.
+         =================================================================== -->
+    <section class="section" aria-labelledby="titulo-quien">
+      <div class="container">
+        <div class="about reveal">
+          <img class="avatar" src="assets/foto.jpg" alt="Foto de Eric Jesús Leyva López" width="400" height="400" loading="lazy">
+          <div>
+            <h2 id="titulo-quien">Quién está detrás</h2>
+            <p class="about-name" data-config="responsable">Eric Jesús Leyva López</p>
+            <p>Ingeniero en Desarrollo y Gestión de Software, de Coatzacoalcos, con experiencia en Python y AWS.</p>
+            <p>Soy una persona, no un equipo grande: quien te contesta por WhatsApp es quien hace tu tablero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. CONTACTO
+         El botón y el correo se generan desde CONFIG (en js/main.js).
+         =================================================================== -->
+    <section class="section section--alt contact" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="container reveal">
+        <div class="section-head">
+          <h2 id="titulo-contacto">Platícame de tu negocio</h2>
+          <p>Mándame un mensaje y vemos qué necesitas.</p>
+        </div>
+        <a class="btn btn--whatsapp btn--large" href="#contacto" data-whatsapp>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+        <p class="contact-mail">o al correo <a href="#contacto" data-correo></a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       10. PIE DE PÁGINA
+       El nombre y el año se llenan solos con JavaScript.
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="anio">2026</span> <span data-config="estudio">Eleva Dev</span></span>
+      <span data-config="ubicacion">Coatzacoalcos, Veracruz, México</span>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="#contacto" data-whatsapp aria-label="Escríbeme por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+  </a>
+
+  <!-- Íconos que se repiten en la página. Se dibujan una vez y se reutilizan con <use>. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-.9-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></symbol>
+  </svg>
+
+  <!-- Lógica: tus datos (CONFIG), enlaces, menú y animaciones -->
+  <script src="js/main.js"></script>
+</body>
+</html>
