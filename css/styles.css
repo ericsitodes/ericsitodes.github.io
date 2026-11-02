@@ -212,6 +212,7 @@ svg { display: block; }
 .contact { text-align: center; }
 .contact .section-head { margin-inline: auto; }
 .contact-mail { display: block; margin-top: 20px; color: var(--text-muted); }
+.contact .note { max-width: 640px; margin: 32px auto 0; }
 .contact-mail a { color: var(--accent); font-weight: 600; overflow-wrap: anywhere; text-underline-offset: 3px; }
 
 /* ================= 10. PIE DE PÁGINA ================= */
