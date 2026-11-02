@@ -80,6 +80,8 @@ svg { display: block; }
 .btn--ghost { background: transparent; border-color: var(--border); color: var(--text); }
 .btn--ghost:hover { border-color: var(--accent); }
 .btn--large { font-size: 1.125rem; min-height: 60px; padding: 16px 32px; }
+.btn--disabled { background: var(--surface-raised); border-color: var(--border); color: var(--text-muted); cursor: not-allowed; }
+.btn--disabled:hover { transform: none; }
 
 .text-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-weight: 600; text-underline-offset: 3px; }
 .text-link:hover { color: var(--accent-hover); }
