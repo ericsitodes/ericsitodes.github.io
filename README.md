@@ -43,6 +43,26 @@ Si cambias el nombre del estudio o el tuyo, cámbialos también en el `<head>` d
 
 Los mensajes de cada plan y servicio están en el atributo `data-mensaje` de su botón en `index.html`.
 
+## Correrlo en tu computadora
+
+No necesita instalar nada, solo Python para servir los archivos:
+
+```powershell
+python -m http.server 8000
+```
+
+Abre http://localhost:8000. Para detenerlo, presiona `Ctrl + C` en la terminal.
+
+## Demos enlazados
+
+| Giro | Demo | Repositorio |
+| --- | --- | --- |
+| Restaurante | https://palapa-demo.streamlit.app/ | `ericsitodes/demo-restaurante` |
+| Tienda | https://demo-tienda.streamlit.app/ | `ericsitodes/demo-tienda` |
+| Farmacia | https://demo-farmacia.streamlit.app/ | `ericsitodes/demo-farmacia` |
+
+Los links están en los botones "Ver demo" de `index.html`. El precio de lanzamiento no va en el sitio: solo se ofrece en conversación directa.
+
 ## Publicar en GitHub Pages
 
 GitHub Pages sirve este repositorio directamente, sin compilar nada. El repositorio debe llamarse `<usuario>.github.io` para publicarse en la raíz de ese dominio.

@@ -173,6 +173,7 @@ svg { display: block; }
 .h-bar { transform-box: fill-box; transform-origin: left; }
 .demo-card .btn { margin-top: auto; width: 100%; }
 .demo-card p { margin-bottom: 20px; }
+.demo-card .demo-note { margin: 10px 0 0; color: var(--text-muted); font-size: .8125rem; text-align: center; }
 .note { color: var(--text-muted); font-size: .9375rem; margin-top: 20px; }
 
 /* ================= 5. PRECIOS ================= */
