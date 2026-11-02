@@ -61,7 +61,7 @@ Abre http://localhost:8000. Para detenerlo, presiona `Ctrl + C` en la terminal.
 | Tienda | https://demo-tienda.streamlit.app/ | `ericsitodes/demo-tienda` |
 | Farmacia | https://demo-farmacia.streamlit.app/ | `ericsitodes/demo-farmacia` |
 
-Los links están en los botones "Ver demo" de `index.html`. El precio de lanzamiento no va en el sitio: solo se ofrece en conversación directa.
+Los links están en los botones "Ver ejemplo" de `index.html`. El precio de lanzamiento no va en el sitio: solo se ofrece en conversación directa.
 
 ## Publicar en GitHub Pages
 
